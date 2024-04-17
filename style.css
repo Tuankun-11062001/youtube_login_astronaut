@@ -1,0 +1,264 @@
+/* set up css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(#fff, #461e4f);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+/* sign up css */
+
+.sign_up {
+  background: #fff;
+  width: 70dvw;
+  display: flex;
+  border-radius: 4rem;
+}
+
+/* sign up left */
+
+.sign_up .left {
+  flex: 1;
+}
+
+.sign_up .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4rem;
+}
+
+/* right */
+.sign_up .right {
+  flex: 1;
+  margin-left: 5rem;
+  padding: 3rem;
+}
+
+/* sign up right */
+
+.sign_up .right .top {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: gray;
+}
+
+.sign_up .right .top span {
+  color: #461e4f;
+  cursor: pointer;
+}
+
+/* right content */
+
+.sign_up .right .content {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+}
+
+/* right content top */
+
+.sign_up .right .content .content_top h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  color: #461e4f;
+  font-weight: bold;
+}
+
+.sign_up .right .content .content_top .social_button {
+  display: flex;
+  gap: 2rem;
+}
+
+.sign_up .right .content .content_top .social_button button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 550;
+  box-sizing: 0.3rem 0.3rem 0.3rem rgba(70, 30, 79, 0.2);
+  margin-bottom: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sign_up .right .content .content_top .social_button button:first-child {
+  background: #8c4a9b;
+  color: #fff;
+}
+
+.sign_up .right .content .content_top .social_button button:last-child {
+  background: rgba(70, 30, 79, 0.2);
+  color: #461e4f;
+}
+
+.sign_up .right .content .content_top .social_button button:last-child:hover {
+  background: #8c4a9b;
+  color: #fff;
+}
+
+.sign_up .right .content .content_top .social_button button img {
+  width: 1.5rem;
+}
+
+.sign_up .right .content .content_top .line {
+  width: 4rem;
+  height: 0.1rem;
+  background: #461e4f;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* right content middle */
+
+.sign_up .right .content .content_middle .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sign_up .right .content .content_middle .form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 550;
+  color: #461e4f;
+}
+
+.sign_up .right .content .content_middle .form input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  outline: none;
+  border: 0.1rem solid transparent;
+  background: rgba(70, 30, 79, 0.1);
+  font-size: 1.6rem;
+  transition: 0.3s ease-in-out;
+  color: #461e4f;
+}
+
+.sign_up .right .content .content_middle .form input:focus {
+  border: 0.1rem solid #461e4f;
+}
+
+.sign_up .right .content .content_middle .message.error {
+  margin-top: 1rem;
+  color: rgb(209, 69, 69);
+}
+
+.sign_up .right .content .content_middle .message.success {
+  margin-top: 1rem;
+  color: rgb(74, 209, 69);
+}
+
+/* right bottom */
+
+.sign_up .right .content .content_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sign_up .right .content .content_bottom .agree_btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sign_up .right .content .content_bottom .agree_btn input {
+  accent-color: #461e4f;
+  width: 2rem;
+  height: 2rem;
+}
+
+.sign_up .right .content .content_bottom .submit_btn {
+  padding: 1.5rem 1rem;
+  border-radius: 3rem;
+  background: #461e4f;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 550;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(70, 30, 79, 0.2);
+}
+
+.sign_up .right .content .content_bottom .submit_btn:hover {
+  background: rgba(70, 30, 79, 0.8);
+}
+
+.sign_up .right .content .content_bottom p {
+  margin-left: 1rem;
+}
+
+.sign_up .right .content .content_bottom p span {
+  color: #461e4f;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: unset;
+  }
+
+  .sign_up {
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.4rem;
+    border-radius: unset;
+  }
+
+  /* left */
+
+  .sign_up .left img {
+    height: 40rem;
+    border-radius: 0 0 3rem 3rem;
+  }
+
+  /* right */
+
+  .sign_up .right {
+    margin: 2rem auto;
+    padding: unset;
+    width: 80%;
+  }
+
+  /* right top */
+
+  .sign_up .right .top {
+    display: none;
+  }
+
+  .sign_up .right .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .sign_up .right .content .content_top h1 {
+    font-size: 2.3rem;
+  }
+
+  .sign_up .right .content .content_top .form {
+    gap: 1rem;
+  }
+}
